@@ -1,0 +1,74 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("conversao de medidas\n");
+    printf("\n1:quilometros para milha\n");
+    printf("\n2:metros para pes\n");
+    printf("\n3:celcius para fareheit\n");
+    printf("\n4:quilogramas para libras\n");
+    printf("\nescolha um numero de 1 a 4: ");
+    int numero;
+    scanf("%i",&numero);
+    if
+      (numero>4)
+       {
+            printf("numero invalido. Digite outro: ");
+            int numero;
+            scanf("%i",&numero);
+            printf("\ndigite o valor a ser convetido: ");
+            float valor;
+            scanf("%f",&valor);
+
+            switch (numero)
+    {
+
+    case 1:
+        float milhas=valor*0.621;
+        printf("\no valor e: %f", milhas);
+        break;
+    case 2:
+        float pes=valor*3.28;
+        printf("\no valor e: %f",pes);
+        break;
+    case 3:
+        float fareheit=valor*32;
+        printf("\no valor e: %f",fareheit);
+        break;
+    case 4:
+        float libras=valor*2.20;
+        printf("o valor e: %f",libras);
+        break;
+    }
+
+           }
+
+    else
+    printf("\ndigite o valor a ser convetido: ");
+    float valor;
+    scanf("%f",&valor);
+    switch (numero)
+    {
+
+    case 1:
+        float milhas=valor*0.621;
+        printf("\no valor e: %f", milhas);
+        break;
+    case 2:
+        float pes=valor*3.28;
+        printf("\no valor e: %f",pes);
+        break;
+    case 3:
+        float fareheit=valor*32;
+        printf("\no valor e: %f",fareheit);
+        break;
+    case 4:
+        float libras=valor*2.20;
+        printf("o valor e: %f",libras);
+        break;
+
+    }
+
+    return 0;
+}
